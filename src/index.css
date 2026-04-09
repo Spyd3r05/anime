@@ -11,3 +11,7 @@ body {
   background-color: #f7efc8;
   overflow-x: hidden;
 }
+
+.infinite-board{
+  perspective: 1200px;
+}
