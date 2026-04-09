@@ -62,9 +62,8 @@ const CardStack = <T extends StackableItem>({
         animate={
             {
                 rotateZ: (items.length -index -1) *config.rotation,
-                scale: 1 + index * config.scale - items.length * config.scale,
-                transformOrigin: "90% 90%"
-            }
+                scale: 1.06,
+                transformOrigin: "50% 50%"            }
         }
         transition={{type: "spring", stiffness: 260, damping:20}}
         >
