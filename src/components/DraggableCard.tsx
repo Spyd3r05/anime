@@ -18,6 +18,7 @@ const DraggableCard = ({onSendBack, children, className} : DraggableCardProps )=
     dragConstraints={{top:0, right:0, left:0, bottom:0}}
     dragElastic={0.6}
     onDragEnd={handleDrag}
+    whileHover={{ scale: 1.06 }}
     whileTap={{cursor: "grabbing"}}
     >
       {children}
