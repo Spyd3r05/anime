@@ -22,17 +22,27 @@ const ImageStacks = () => {
     { id: 6, img: "/aot/hange.jpg" },
   ];
 
+  const jjk: ImageStack[] = [
+    { id: 1, img: "/jjk/geto.jpg" },
+    { id: 2, img: "/jjk/gojo.jpg" },
+    { id: 3, img: "/jjk/sukuna.jpg" },
+    { id: 4, img: "/jjk/nanamin.jpg" },
+    { id: 5, img: "/jjk/yuta.jpg" },
+    { id: 6, img: "/jjk/nobara.jpg" },
+    { id: 7, img: "/jjk/megumi.jpg" },
+  ];
+
   const stackSets: ImageStack[][] = [
     demonSlayer,
     [...aot].slice(0, 4),
     [...demonSlayer].reverse(),
+    [...jjk].slice(0, 6),
     [...aot].slice(2, 6),
     [...aot].reverse().slice(0, 4),
-    [...demonSlayer, ...aot.slice(0, 1)],
-    [...aot].slice(1, 5),
+    [...jjk].reverse().slice(0, 6),
     [...demonSlayer].slice(0, 3),
     [...aot].slice(0, 3),
-    [...demonSlayer].reverse().slice(0, 3),
+    [...jjk],
     [...aot].slice(3),
   ];
 
